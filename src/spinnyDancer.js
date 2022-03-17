@@ -2,7 +2,7 @@ var makeSpinnyDancer = function(top, left, timeBetweenSteps) {
   // makeDancer.call(this);
   makeBlinkyDancer.call(this, top, left, timeBetweenSteps);
 
-
+  this.$node.addClass('spinny');
 };
 
 makeSpinnyDancer.prototype = Object.create(makeBlinkyDancer.prototype);

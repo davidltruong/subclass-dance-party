@@ -25,3 +25,10 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.bouncy{
+  border:15px solid blue;
+  border-radius:20px;
+}
+.spinny{
+  border:20px solid green;
+}
