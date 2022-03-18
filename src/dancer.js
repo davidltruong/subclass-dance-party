@@ -50,7 +50,7 @@ makeDancer.prototype.together = function() {
   this.$node.css({
     'bottom': '0px',
     'top': 'auto',
-    'border-color': 'orange'
+    'border': 'orange'
   });
 };
 

@@ -46,7 +46,7 @@ $(document).ready(function() {
   $('.addDancerButton').on('click', function(event) {
     for (var i = 0; i < window.dancers.length; i++) {
       //console.log('Hello')
-      var minDistance = 200;
+      var minDistance = 150;
       var aPosX = window.dancers[i].left;
       var aPosY = window.dancers[i].top;
       //if dancer is within minDistance
@@ -58,7 +58,6 @@ $(document).ready(function() {
         var cSqred = (Math.pow(a, 2)) + (Math.pow(b, 2));
         var c = Math.sqrt(cSqred);
         if (c < minDistance) {
-          console.log('Hello');
           window.dancers[i].together();
           window.dancers[j].together();
         }
@@ -96,6 +95,14 @@ $(document).ready(function() {
     $('.dancer').animate({left: '0px'});
   });
 
+  // $('.dancer').mouseover(function() {
+  //   console.log('hello');
+  //   $('.dancer').css('background-color', 'yellow');
+  // });
+
+  $('body').on('mouseover', '.bouncy', function(event) {
+    console.log(event);
+    $('.bouncy').addClass('backgroundyellow');
+  });
 
 });
-

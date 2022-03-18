@@ -31,8 +31,8 @@ body, a:link, a:visited, a:active{
 .bouncy{
   width: 200px;
   height: 100px;
-  background: blue;
   border-radius: 100px / 50px;
+  background: blue;
 }
 .spinny{
   width: 0;
@@ -40,5 +40,9 @@ body, a:link, a:visited, a:active{
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-bottom: 100px solid green;
+}
+
+.backgroundyellow{
+  background:yellow;
 }
 
