@@ -26,6 +26,9 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+
+    window.dancers.push(dancer);
+
     $('body').append(dancer.$node);
   });
 
@@ -33,11 +36,41 @@ $(document).ready(function() {
     $('.dancer').css('border-color', 'purple');
   });
 
-
-  $('.move').click(function() {
-    $('.dancer').animate({left: '0px'});
+  $('.lineUp').on('click', function(event) {
+    console.log(window.dancers);
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
   });
 
+  $('.grow').click(function() {
+    $('.dancer').animate({
+      width: '300px',
+      height: '300px',
+    }, 1500 );
+  });
+
+  $('.addSpinnyButton').click(function() {
+    $('.spinny').animate(
+      { deg: 1800 },
+      {
+        duration: 2400,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      }
+    );
+  });
+
+  $('.addBouncyButton').click(function() {
+    for (i = 0; i < 5; i++) {
+      $('.bouncy').animate({marginTop: '-=' + '50px'}, 300).animate({marginTop: '+=' + '50px'}, 300);
+    }
+  });
+
+  $('.move').click(function() {
+    $('.dancer').animate({right: '0px'});
+  });
 
 });
 

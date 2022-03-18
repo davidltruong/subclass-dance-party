@@ -18,3 +18,9 @@ makeSpinnyDancer.prototype.constructor = makeSpinnyDancer;
 //   this.$node.toggle();
 // };
 
+makeSpinnyDancer.prototype.lineUp = function() {
+  console.log('calling lineUp');
+  this.$node.css({
+    'top': '0px'
+  });
+};
