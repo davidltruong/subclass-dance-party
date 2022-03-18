@@ -2,6 +2,9 @@ body, html{
   height:100%;
 }
 body{
+  background: url(https://media.istockphoto.com/photos/abstract-digital-background-with-rotating-neon-stars-modern-blue-picture-id1209657178?b=1&k=20&m=1209657178&s=170667a&w=0&h=yTCD0dHwGh0Q9umPNKu0KG0umpT8Wh-LBAfo0KuSqag=);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -38,3 +41,4 @@ body, a:link, a:visited, a:active{
   border-right: 50px solid transparent;
   border-bottom: 100px solid green;
 }
+

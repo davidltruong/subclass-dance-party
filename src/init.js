@@ -45,8 +45,8 @@ $(document).ready(function() {
 
   $('.grow').click(function() {
     $('.dancer').animate({
-      width: '300px',
-      height: '300px',
+      width: '100px',
+      height: '100px',
     }, 1500 );
   });
 
@@ -69,7 +69,7 @@ $(document).ready(function() {
   });
 
   $('.move').click(function() {
-    $('.dancer').animate({right: '0px'});
+    $('.dancer').animate({left: '0px'});
   });
 
 });
