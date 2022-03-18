@@ -13,10 +13,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
-.topbar{
+/* .topbar{
   height:32px;
   background-color: #555;
-}
+} */
 .title{
   background-color: #777;
 }
@@ -26,9 +26,15 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .bouncy{
-  border:15px solid blue;
-  border-radius:20px;
+  width: 200px;
+  height: 100px;
+  background: blue;
+  border-radius: 100px / 50px;
 }
 .spinny{
-  border:20px solid green;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
 }
