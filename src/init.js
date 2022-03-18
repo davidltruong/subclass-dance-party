@@ -37,16 +37,40 @@ $(document).ready(function() {
   });
 
   $('.lineUp').on('click', function(event) {
-    console.log(window.dancers);
+    //console.log(window.dancers[0].left);
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].lineUp();
     }
   });
 
+  $('.addDancerButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      //console.log('Hello')
+      var minDistance = 200;
+      var aPosX = window.dancers[i].left;
+      var aPosY = window.dancers[i].top;
+      //if dancer is within minDistance
+      for (var j = i + 1; j < window.dancers.length; j++) {
+        var bPosX = window.dancers[j].left;
+        var bPosY = window.dancers[j].top;
+        var a = Math.abs(aPosX - bPosX);
+        var b = Math.abs(aPosY - bPosY);
+        var cSqred = (Math.pow(a, 2)) + (Math.pow(b, 2));
+        var c = Math.sqrt(cSqred);
+        if (c < minDistance) {
+          console.log('Hello');
+          window.dancers[i].together();
+          window.dancers[j].together();
+        }
+      }
+    }
+  });
+
+
   $('.grow').click(function() {
     $('.dancer').animate({
-      width: '100px',
-      height: '100px',
+      width: '200px',
+      height: '200px',
     }, 1500 );
   });
 
@@ -71,6 +95,7 @@ $(document).ready(function() {
   $('.move').click(function() {
     $('.dancer').animate({left: '0px'});
   });
+
 
 });
 

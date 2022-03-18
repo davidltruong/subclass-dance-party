@@ -39,7 +39,18 @@ makeDancer.prototype.setPosition = function(top, left) {
 };
 
 makeDancer.prototype.lineUp = function() {
-  console.log('calling lineUp');
   this.$node.css({left: '0px'});
+};
+
+makeDancer.prototype.bump = function() {
+  this.$node.css({color: 'green'});
+};
+
+makeDancer.prototype.together = function() {
+  this.$node.css({
+    'bottom': '0px',
+    'top': 'auto',
+    'border-color': 'orange'
+  });
 };
 

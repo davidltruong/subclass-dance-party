@@ -23,7 +23,6 @@ makeBouncyDancer.prototype.step = function() {
 };
 
 makeBouncyDancer.prototype.lineUp = function() {
-  console.log('calling lineUp');
   this.$node.css({
     'right': '0px',
     'left': 'auto'
