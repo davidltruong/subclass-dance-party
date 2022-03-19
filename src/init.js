@@ -95,11 +95,6 @@ $(document).ready(function() {
     $('.dancer').animate({left: '0px'});
   });
 
-  // $('.dancer').mouseover(function() {
-  //   console.log('hello');
-  //   $('.dancer').css('background-color', 'yellow');
-  // });
-
   $('body').on('mouseover', '.bouncy', function(event) {
     console.log(event);
     $('.bouncy').addClass('backgroundyellow');
