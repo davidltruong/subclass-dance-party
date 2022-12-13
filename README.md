@@ -6,7 +6,6 @@
 - [Install](#install)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
-- [Contributors](#contributors)
 
 ## Background
 
@@ -31,8 +30,3 @@ This project is to showcase the use of subclassing of the initial class dancer. 
 ## Maintainers
 
 [@Davidltruong](https://github.com/davidltruong).
-
-## Contributors
-
-This project exists thanks to all the people who contribute.
-<a href="https://github.com/davidltruong/subclass-dance-party/graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
