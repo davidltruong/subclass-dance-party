@@ -5,6 +5,8 @@
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
+- [Maintainers](#maintainers)
+- [Contributors](#contributors)
 
 ## Background
 
@@ -25,3 +27,12 @@ This project uses [node](http://nodejs.org) and [npm](https://npmjs.com).
 This project is to showcase the use of subclassing of the initial class dancer. Each type of subclass dancer will inherit methods form the superclass but also have distinct personalities.
 
 ![alt text](https://github.com/davidltruong/subclass-dance-party/blob/master/screenshot.png?raw=true)
+
+## Maintainers
+
+[@Davidltruong](https://github.com/davidltruong).
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+<a href="https://github.com/davidltruong/subclass-dance-party/graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
