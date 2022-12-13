@@ -12,7 +12,7 @@ This is a project I completed as a student at [hackreactor](http://hackreactor.c
 
 ## Install
 
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+This project uses [node](http://nodejs.org) and [npm](https://npmjs.com).
 
 ```sh
 1. $ npm install --global
