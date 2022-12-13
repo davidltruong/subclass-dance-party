@@ -37,7 +37,6 @@ $(document).ready(function() {
   });
 
   $('.lineUp').on('click', function(event) {
-    //console.log(window.dancers[0].left);
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].lineUp();
     }
@@ -45,7 +44,6 @@ $(document).ready(function() {
 
   $('.addDancerButton').on('click', function(event) {
     for (var i = 0; i < window.dancers.length; i++) {
-      //console.log('Hello')
       var minDistance = 150;
       var aPosX = window.dancers[i].left;
       var aPosY = window.dancers[i].top;
